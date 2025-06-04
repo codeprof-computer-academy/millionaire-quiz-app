@@ -1,0 +1,382 @@
+@media(max-width:450px){
+
+   .welcome-screen{
+          
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top:0;
+          left:0;
+          background-color: white;
+          z-index: 10;
+          padding: 30px;
+          display: none;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+   }
+
+   .welcome-screen > img{
+    width: 80%;
+    object-fit: contain;
+    animation-name: rotate-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition: 1s;
+   }
+
+   .welcome-screen h2{
+    font-size: 30px;
+    color:black;
+    font-weight: 500;
+   }
+
+   .welcome-screen h2 b{
+    color: rgb(235, 171, 23);
+
+   }
+   
+   .welcome-screen small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   }
+
+   .welcome-screen small b{
+    font-size: 18px;
+   }
+
+
+ 
+   header{
+    width: 100%;
+    height: 70px;
+     background-color: rgb(22, 0, 53);
+     padding: 10px 25px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+   }
+
+   header > span{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap:15px;
+      color:rgba(255,255,255,0.6);
+   }
+
+   header > span img{
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+   }
+
+   header nav{
+    position: absolute;
+    top:70px;
+    left:-320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    gap:20px;
+    height: calc(100vh - 100px);
+    width: 320px;
+    background-color: rgb(37, 0, 89);
+    transition: 1s;
+   }
+
+   header nav a img{
+    opacity: 0.7;
+    transition: 0.5s;
+   }
+
+   header nav a{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:15px;
+    color:rgba(255,255,255,0.7);
+    font-size: 20px;
+    font-weight: 200;
+   }
+
+   header nav a:hover img{
+    opacity: 1;
+    transform: scale(1.2);
+   }
+
+   header nav a:hover{
+    color:white;
+   }
+
+   header nav div{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-direction: column;
+    color:rgba(255,255,255,0.7);
+    font-weight: 200;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    padding-top: 20px;
+   }
+
+   header nav div h3{
+    align-self: flex-start;
+   }
+   header nav div section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   }
+
+header nav div section small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+   header nav div section img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.7);
+    cursor: pointer;
+   }
+
+   .menu-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url("./assets/icons/menu.png");
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    opacity: 0.6;
+   }
+
+   /* main styling starts here */
+
+   main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   main .water-mark{
+    width: 90%;
+    object-fit: contain;
+    opacity: 0.1;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    transition: 1s;
+    animation-name: flash-logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+   }
+
+   main .top{
+    width: 100%;
+    height:100px;
+    background-color: rgb(43, 1, 101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 20px;
+    
+   }
+   .top div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   }
+
+   .top div span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+    color:gold;
+   }
+
+   main .question-container{
+    width: 90%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/images/question_frame.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    padding: 15px;
+  
+   }
+
+   main .question-container h4{
+    font-weight: 500;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+
+   main .options-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 20px;
+   }
+
+   main .options-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+   }
+
+   main .options-container div button{
+       width: 50%;
+       height: 80px;
+       background-image: url("./assets/images/option_frame.png");
+       background-position: center center;
+       background-size: contain;
+       background-repeat: no-repeat;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap:10px;
+       font-size: 13px;
+       background-color: transparent;
+       border: none;
+       color:white;
+       cursor: pointer;
+       transition: 0.5s;
+   }
+   
+   main .options-container div button:hover{
+    background-image: url("./assets/images/option_frame-filled.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .next-btn{
+       width: fit-content;
+       padding: 10px 30px;
+       border:1px solid gold;
+       color:gold;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: transparent;
+       cursor: pointer;
+       transition: 0.5s;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 100px;
+   }
+
+   .next-btn:hover{
+      background-color: white;
+      color:rgb(37, 0, 89);
+    
+   }
+
+
+   /* footer styling starts here */
+   footer{
+    width: 100%;
+    height: 30px;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   footer p{
+    font-size: 10px;
+    color:rgb(22, 0, 53);
+   }
+
+   /* utility class */
+   .slide-nav{
+       left:0px
+   }
+
+   main .options-container div .correct-answer{
+        background-image: url("./assets/images/option_frame-correct.png");
+   }
+
+   main .options-container div .wrong-answer {
+       background-image: url("./assets/images/option_frame-wrong.png");
+   }
+   
+   main .options-container div .no-answer {
+    background-image: url("./assets/images/option_frame.png");
+   }
+
+
+
+
+   /* animation key frames */
+   @keyframes rotate-logo {
+       from {
+           transform: rotate(0deg);
+       }
+
+       to {
+           transform: rotate(360deg);
+       }
+
+   }
+
+   @keyframes flash-logo {
+       from {
+           opacity: 0.1;
+       }
+
+       to {
+          opacity: 0.2;
+       }
+
+   }
+}
+

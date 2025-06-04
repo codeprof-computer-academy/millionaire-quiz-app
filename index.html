@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionaire Quiz</title>
+    <link rel="shortcut icon" href="./assets/images/logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="welcome-screen">
+             <img src="./assets/images/logo2.png" alt="" width="100">
+             <h2> <b>Millionaire</b> Quiz App</h2>
+             <small>
+                     by <b>Codeprof Academy</b>
+             </small>
+
+            <audio src="./assets/sounds/welcome.mp3" autoplay></audio>
+
+    </div>
+
+    <header>
+             <span>
+                    <img src="./assets//images/logo2.png" alt="">
+                    <b>Millionaire Quiz</b>
+             </span>
+
+             <nav>
+                       <a href=""> <img src="./assets/icons/home.png" alt="" width="20"> Home </a>
+                       <a href=""> <img src="./assets/icons/about.png" alt="" width="20"> About App </a>
+                       <a href=""> <img src="./assets/icons/registration.png" alt="" width="20"> Signup </a>
+                       <a href=""> <img src="./assets/icons/login.png" alt="" width="20"> Login </a>
+                       <a href=""> <img src="./assets/icons/settings.png" alt="" width="20"> Settings </a>
+                       <a href=""> <img src="./assets/icons/support.png" alt="" width="20"> Support </a>
+                       <a href=""> <img src="./assets/icons/issue.png" alt="" width="20"> Report Issue </a>
+
+
+                       <div>
+                                   <h3>Team Faces</h3>
+                                    <section>
+                                        <small>
+                                            <img src="./assets/images/face1.jpg" alt="" width="50">
+                                             Cyril
+                                      </small>
+   
+                                   <small>
+                                       <img src="./assets/images/face2.jpg" alt="" width="50">
+                                       John
+                                     
+                                   </small>
+   
+                                   <small>
+                                       <img src="./assets/images/face3.jpg" alt="" width="50">
+                                       Thompson
+                                     
+                                   </small>
+
+                                <small>
+                                    <img src="./assets/images/face4.jpg" alt="" width="50">
+                                    Toheebat
+                                
+                                </small>
+
+                                    </section>
+
+                               
+                       </div>
+
+             </nav>
+
+             <button class="menu-btn"></button>
+    </header>
+    <main>
+           <img src="./assets/images/logo2.png" alt="" class="water-mark">
+           <section class="top">
+               
+               <div>
+                   <span>
+                       Total Questions: <b class="total-questions">12</b>
+                    </span>
+                    <span>
+                        Attempted Questions: <b class="attempted-questions">0</b>
+                    </span>
+                </div>
+                <div>
+                 
+                 <span>
+                        current prize: ₦<b class="take-home-balance">0.0</b>
+                 </span>
+                </div>
+         
+           </section>
+           <section class="question-container">
+              <h4 class="question">who is the president of Nigeria ?</h4>
+           </section>
+
+           <section class="options-container">
+                  
+                 <div>
+                        <button class="option-btn" id="a">Olusegun Obasanjo</button>
+                  
+                         <button class="option-btn" id="b">Nnamdi Azikwe</button>
+                  
+                 </div>
+                 <div>
+                        
+                            <button class="option-btn" id="c">Ahmed Tinubu</button>
+                 
+                           <button class="option-btn" id="d">Mohammed Buhari</button>
+                 </div>
+  
+           </section>
+           <button class="next-btn">Next</button>
+    </main>
+    <footer>
+          <p>&copy; Copyright <span class="year"></span>. All rights reserved. Powered by Codeprof Academy.</p>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
