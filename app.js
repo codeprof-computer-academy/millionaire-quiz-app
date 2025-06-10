@@ -91,6 +91,7 @@ function load_next_question(){
                question_area.innerHTML = ""
               counter = counter // you are at the last question
               next_btn.innerHTML = "Finish"
+              next_btn.classList.add("bring-to-center")
               
               next_btn.addEventListener("click", function(){
                       finish_modal.style.display = "flex"
@@ -120,6 +121,7 @@ function check_correct_answer(){
       let current_question = questions[counter]
       const all_option_btns = document.querySelectorAll(".option-btn")
       all_option_btns.forEach(function(option_btn){
+
               option_btn.addEventListener("click", function(){
                        let selected_option = option_btn.id
                        if(selected_option === current_question.correct){
@@ -150,6 +152,11 @@ function check_correct_answer(){
 
                                  }
                             })
+
+                        //     disable all the buttons
+                        all_option_btns.forEach(function(btn){
+                               btn.disabled = true
+                        })
 
                             question_attempted++  // increase the no of questions answered
                             attempted_questions.innerHTML = question_attempted

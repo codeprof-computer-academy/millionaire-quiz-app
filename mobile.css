@@ -10,7 +10,7 @@
           background-color: white;
           z-index: 10;
           padding: 30px;
-          display: flex;
+          display: none;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
@@ -458,6 +458,16 @@ header nav div section small{
    main .options-container div .wrong-answer {
        background-image: url("./assets/images/option_frame-wrong.png");
    }
+
+   .bring-to-center{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, 50%);
+      animation-name: change-bg;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+   }
    
 
 
@@ -485,6 +495,18 @@ header nav div section small{
           opacity: 0.2;
        }
 
+   }
+
+   @keyframes change-bg {
+       from{
+           background-color: transparent;
+           color:gold
+       }
+       to{
+           background-color: gold;
+           color:rgb(10, 0, 23);
+       }
+    
    }
 }
 
