@@ -89,8 +89,9 @@
     gap:20px;
     height: calc(100vh - 100px);
     width: 320px;
-    background-color: rgb(37, 0, 89);
+    background-color: rgb(43, 1, 101);
     transition: 1s;
+    z-index: 100;
    }
 
    header nav a img{
@@ -183,6 +184,7 @@ header nav div section small{
     align-items: center;
    }
 
+
    main .water-mark{
     width: 90%;
     object-fit: contain;
@@ -200,6 +202,79 @@ header nav div section small{
     animation-direction: normal;
    }
 
+.finish-modal{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 0, 23);
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 7;
+
+
+}
+
+.finish-modal > span{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finish-modal > span small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: fit-content;
+    padding: 6px 15px;
+    border-radius: 50px;
+    background-color: rgb(37, 0, 89);
+}
+
+.finish-modal > span small b{
+    font-size: 20px;
+    color:gold;
+}
+.finish-modal > img{
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.finish-modal h1{
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+}
+
+.finish-modal h1 b{
+    color:gold;
+    font-size: 50px;
+}
+
+.finish-modal > button{
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid gold;
+    background-color: transparent;
+    color:gold;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.finish-modal > button:hover{
+    background-color: gold;
+    color:rgb(22, 0, 53);
+
+}
    main .top{
     width: 100%;
     height:100px;
@@ -228,6 +303,39 @@ header nav div section small{
     color:gold;
    }
 
+   .start-btn{
+    width: 200px;
+    height: 70px;
+    border-radius: 100px;
+    border: 1px solid gold;
+    color:white;
+    background-color: transparent;
+    font-size: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+   }
+
+   .start-btn:hover{
+    background-color: gold;
+    color:rgb(22, 0, 53);
+   }
+
+   .question-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
    main .question-container{
     width: 90%;
     min-height: 150px;
@@ -244,13 +352,14 @@ header nav div section small{
 
    main .question-container h4{
     font-weight: 500;
-    font-size: 18px;
-    width: 90%;
+    font-size: 14px;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 10px;
    }
 
    main .options-container{
@@ -260,7 +369,7 @@ header nav div section small{
     justify-content: center;
     align-items: center;
     gap:30px;
-    padding: 20px;
+    padding: 10px;
    }
 
    main .options-container div{
@@ -268,7 +377,7 @@ header nav div section small{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:20px;
+    gap:10px;
    }
 
    main .options-container div button{
@@ -281,28 +390,29 @@ header nav div section small{
        display: flex;
        justify-content: center;
        align-items: center;
-       gap:10px;
-       font-size: 13px;
+       font-size: 11px;
        background-color: transparent;
        border: none;
        color:white;
        cursor: pointer;
        transition: 0.5s;
+       font-weight: 400;
+       padding: 10px;
    }
    
-   main .options-container div button:hover{
+   /* main .options-container div button:hover{
     background-image: url("./assets/images/option_frame-filled.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-   }
+   } */
 
    .next-btn{
        width: fit-content;
        padding: 10px 30px;
        border:1px solid gold;
        color:gold;
-       display: flex;
+       display: none;
        justify-content: center;
        align-items: center;
        background-color: transparent;
@@ -349,9 +459,7 @@ header nav div section small{
        background-image: url("./assets/images/option_frame-wrong.png");
    }
    
-   main .options-container div .no-answer {
-    background-image: url("./assets/images/option_frame.png");
-   }
+
 
 
 

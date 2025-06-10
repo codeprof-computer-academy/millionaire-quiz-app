@@ -1,7 +1,6 @@
 const questions = [
     {
         id: 1,
-        category : "computer",
         question: "who is the father of Computer ?",
         a : "John Simon",
         b : "Charles Babbage",
@@ -13,7 +12,6 @@ const questions = [
 
       {
         id: 2,
-        category : "computer",
         question: "what is the full meaning of CPU ?",
         a : "Control Part Unit",
         b : "Computer Programming Unit",
@@ -27,7 +25,6 @@ const questions = [
 
       {
         id: 3,
-        category : "computer",
         question: "What is the full meaning of ECMA?",
         a : "Europian Computer Manufacturer Association",
         b : "Electronic Computer Manufacturer Association",
@@ -38,7 +35,6 @@ const questions = [
     },
     {
       id: 4,
-      category : "mathematics",
       question: "what is the total internal angle in a pentagon ?",
       a : "360 deg",
       b : "480 deg",
@@ -49,7 +45,6 @@ const questions = [
   },
   {
     id: 5,
-    category : "mathematics",
     question: "If it takes 3 men to complete a job in 120 mins, in how many hours will it take a man to complete the same job under same condtion ?",
     a : "6 hours",
     b : "18 hours",
@@ -61,7 +56,6 @@ const questions = [
 
 {
   id: 6,
-  category : "mathematics",
   question: "If Musa bought a car at a price of ₦5000000 in 2017, and made a profit percentage of 75% for selling it in 2025. How much did MUsa sold the car?",
   a : "8,750,000",
   b : "8,150,000",
@@ -73,7 +67,6 @@ const questions = [
 
 {
   id: 7,
-  category : "english",
   question: "Ada read the stroy book diligently, what part of speech is 'diligently'?",
   a : "adverb",
   b : "adjective",
@@ -85,7 +78,6 @@ const questions = [
 
 {
   id: 8,
-  category : "english",
   question: "Camsy didn't come to school?",
   a : "did she",
   b : "does she",
@@ -97,7 +89,6 @@ const questions = [
 
 {
   id: 9,
-  category : "english",
   question: "Habeeb travelled to US --------- 2012?",
   a : "for",
   b : "since",
@@ -110,7 +101,6 @@ const questions = [
 
 {
   id: 10,
-  category : "current_affairs",
   question: "Who is the president of Nigeria?",
   a : "Bola Sanwolu",
   b : "Ahmed Sanwolu",
@@ -122,7 +112,6 @@ const questions = [
 
 {
   id: 11,
-  category : "current_affairs",
   question: "Who is the governor of Lagos State?",
   a : "Sanwolu Babatunde",
   b : "Raji Fshola",
@@ -134,7 +123,6 @@ const questions = [
 
 {
   id: 12,
-  category : "current_affairs",
   question: "who is the CEO of codeprof academy?",
   a : "Nelson Mandela",
   b : "Wale Adenuga",

@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+    <audio src="./assets/sounds/correct-answer.mp3" class="correct-sound"></audio>
+    <audio src="./assets/sounds/welcome.mp3" class="welcome-sound"></audio>
+    <audio src="./assets/sounds/start_sound.mp3" class="start-sound"></audio>
+    <audio src="./assets/sounds/wrong_answer.mp3" class="wrong-sound"></audio>
     <div class="welcome-screen">
              <img src="./assets/images/logo2.png" alt="" width="100">
              <h2> <b>Millionaire</b> Quiz App</h2>
@@ -72,6 +76,18 @@
              <button class="menu-btn"></button>
     </header>
     <main>
+        <div class="finish-modal">
+                  <img src="./assets/images/congratulation.png" alt="" width="100">
+                  <h1>You have won yourself the total sum of <br> <b class="total-money">₦0.0</b></h1>
+                  <span>
+                          <small>Correct answers : <b class="correct-answers">0</b></small>
+                          <small>Wrong Answers  : <b class="wrong-answers">0</b></small>
+                  </span>
+                  <button class="play-again-btn">Play Again</button>
+
+               
+        </div>
+
            <img src="./assets/images/logo2.png" alt="" class="water-mark">
            <section class="top">
                
@@ -91,26 +107,12 @@
                 </div>
          
            </section>
-           <section class="question-container">
-              <h4 class="question">who is the president of Nigeria ?</h4>
-           </section>
-
-           <section class="options-container">
-                  
-                 <div>
-                        <button class="option-btn" id="a">Olusegun Obasanjo</button>
-                  
-                         <button class="option-btn" id="b">Nnamdi Azikwe</button>
-                  
-                 </div>
-                 <div>
-                        
-                            <button class="option-btn" id="c">Ahmed Tinubu</button>
-                 
-                           <button class="option-btn" id="d">Mohammed Buhari</button>
-                 </div>
-  
-           </section>
+               <!-- question arena -->
+                <div class="question-area">
+                    <button class="start-btn">Start</button>
+                    <!-- content to be generated in javascript -->
+                           
+                </div>
            <button class="next-btn">Next</button>
     </main>
     <footer>
